@@ -8,11 +8,9 @@ const apiClient = axios.create({
   },
 });
 
-// Request Interceptor
-// This runs before each request is sent
 apiClient.interceptors.request.use(
   (config) => {
-    const { token } = useAuthStore.getState(); // Get token from Zustand store
+    const { token } = useAuthStore.getState();
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
