@@ -27,21 +27,20 @@ export const navLinks: NavLink[] = [
   },
   { path: "/admin/finances", label: "Financials", allowedRoles: [Role.Admin] },
   {
-    path: "/admin/students",
-    label: "Manage Students",
-    allowedRoles: [Role.Admin],
-  },
-  {
-    path: "/admin/teachers",
-    label: "Manage Teachers",
-    allowedRoles: [Role.Admin],
-  },
-  {
     path: "/admin/academics",
     label: "Manage Academics",
     allowedRoles: [Role.Admin],
-  }, // <-- Add this line
-  { path: "/admin/finances", label: "Financials", allowedRoles: [Role.Admin] },
+  },
+  {
+    path: "/admin/courses",
+    label: "Course Assignments",
+    allowedRoles: [Role.Admin],
+  },
+  {
+    path: "/admin/enrollments",
+    label: "Student Enrollment",
+    allowedRoles: [Role.Admin],
+  },
 
   // Teacher Links
   {
@@ -65,30 +64,5 @@ export const navLinks: NavLink[] = [
     path: "/student/my-courses",
     label: "My Courses",
     allowedRoles: [Role.Student],
-  },
-  {
-    path: "/admin/students",
-    label: "Manage Students",
-    allowedRoles: [Role.Admin],
-  },
-  {
-    path: "/admin/teachers",
-    label: "Manage Teachers",
-    allowedRoles: [Role.Admin],
-  },
-  {
-    path: "/admin/academics",
-    label: "Classes & Subjects",
-    allowedRoles: [Role.Admin],
-  },
-  {
-    path: "/admin/courses",
-    label: "Course Assignments",
-    allowedRoles: [Role.Admin],
-  },
-  {
-    path: "/admin/enrollments",
-    label: "Student Enrollment",
-    allowedRoles: [Role.Admin],
   },
 ];

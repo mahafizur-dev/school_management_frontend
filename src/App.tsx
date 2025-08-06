@@ -60,9 +60,8 @@ const router = createBrowserRouter([
                 path: "teacher/grades/:classId",
                 element: <ManageGradesPage />,
               },
-
-              { path: "student/courses", element: <StudentCoursesPage /> },
-              { path: "student/grades", element: <StudentGradesPage /> },
+              { path: "student/my-courses", element: <StudentCoursesPage /> },
+              { path: "student/my-grades", element: <StudentGradesPage /> },
             ],
           },
           // Teacher Routes
