@@ -18,6 +18,7 @@ import ManageTeachersPage from "./pages/admin/ManageTeachersPage";
 import ManageAcademicsPage from "./pages/admin/ManageAcademicsPage";
 import ManageCoursesPage from "./pages/admin/ManageCoursesPage";
 import ManageEnrollmentsPage from "./pages/admin/ManageEnrollmentsPage";
+import ManageFinancesPage from "./pages/admin/ManageFinancesPage";
 import MyCoursesPage from "./pages/teacher/MyCoursesPage";
 import ClassRosterPage from "./pages/teacher/ClassRosterPage";
 import ManageGradesPage from "./pages/teacher/ManageGradesPage";
@@ -54,6 +55,7 @@ const router = createBrowserRouter([
               { path: "admin/finances", element: <AdminDashboard /> },
               { path: "admin/courses", element: <ManageCoursesPage /> },
               { path: "admin/enrollments", element: <ManageEnrollmentsPage /> },
+              { path: "admin/finances", element: <ManageFinancesPage /> },
               { path: "teacher/courses", element: <MyCoursesPage /> },
               { path: "teacher/roster/:classId", element: <ClassRosterPage /> },
               {
